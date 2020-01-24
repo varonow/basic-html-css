@@ -1,0 +1,24 @@
+.container {
+    margin: 10px 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.black-white {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.round-edge {
+    border: 1px solid #808080;
+    border-radius: 40px;
+}
+
+footer {
+    text-align: center;
+    font-weight: 900;
+}

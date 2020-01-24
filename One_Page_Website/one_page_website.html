@@ -29,14 +29,73 @@
         <!-- END HOME -->
 
         <!-- GALLERY -->
-        <div id="gallery">
-            <h1>Image Gallery</h1>
-            <!-- IMAGE 1 -->
-            <div>
-                <img src="images/1.jpg" alt="">
+             <div id="#gallery" class="row">
+                <div class="column">
+                    <img src="images/thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow box_thumb" width="172" height="115">
+                </div>
+                <div class="column">
+                    <img src="images/thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow box_thumb"  width="172" height="115" class="box_thumb">
+                </div>
+                <div class="column">
+                    <img src="images/thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow box_thumb"  width="172" height="115" class="box_thumb">
+                </div>
+                <div class="column">
+                    <img src="images/thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow box_thumb"  width="172" height="115">
+                </div>                                             
             </div>
-            <!-- END IMAGE 1 -->
-        </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+  
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/thumb_1.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/thumb_2.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/thumb_3.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/thumb_4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="images/thumb_1.jpg" onclick="currentSlide(1)" alt="Pool" width="172px" height="115">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="images/thumb_2.jpg" onclick="currentSlide(2)" alt="Master Suite" width="172px" height="115">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="images/thumb_3.jpg" onclick="currentSlide(3)" alt="Kitchen" width="172px" height="115">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="images/thumb_4.jpg" onclick="currentSlide(4)" alt="Living Room" width="172px" height="115">
+                    </div>
+                </div>
+            </div>            
+    
         <!-- END GALLERY -->
 
         <!-- VIDEO -->
@@ -80,6 +139,7 @@
             Just Pretend Website &nbsp;&nbsp;| &nbsp;&nbsp;&copy;2020
         </footer>
         <!-- END FOOTER -->
+        <script src="js/one_page_website.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.table {
+    margin: 20px 5px;
+
+}
+
+
+table {
+    border-collapse: collapse; /* Remove cell spacing */
+    margin: 0 auto;
+    }
+
+table, tr, td, th {
+    border: 1px solid #808080;
+}
+
+tr, td, th {
+    padding: 3px 5px;
+}
+
+thead tr:first-of-type {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+}
+
+thead tr:nth-child(2),
+tfoot tr {
+    background-color:lightskyblue;
+    color: darkblue;
+    text-align: center;
+    font-weight: 700;
+}
+
+.right {
+    text-align: right;
+}
